@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="style.css" >
     <title>Projeto HP</title>
 
 </head>
 
 <body>
-    <div class="paginaInicial">
-        <header id="idPagInicial">
-            <nav class="navMenu">
-                <img src="" alt="imgLogo">
-                <ul>
+    <div id="idPagInicial">
+        <header class="header">
+            <img class="imgLogo" src="./src/hpLogo.png" alt="imgLogo">
+            <nav>
+               
+                <ul class="navMenu">
                     <li><a href="#idPagInicial"> Página inicial</a></li>
                     <li> <a href="#paginaFilmes"> Filmes </a></li>
                     <li> <a href="#paginaPersonagens"> Personagens</a></li>
@@ -26,62 +27,116 @@
         </header>
     </div>
     <main>
+        <section class="setPaginaInicial">
+            <img class="imgFundo" src="./src/fundoPagInicial.png" alt="imgPaginaInicial">
+            
+            <div class="cardInicial">
+                               
+           </div>
+
+
+        </section>
         <section class="setPagFilmes" id="paginaFilmes">
 
             <div class="cardFilmes">
-                <h2>Filmes |Notas </h2>
+                <h2>Filmes | Notas </h2>
                 <ul>
-                    <li> <img src="" alt="imgFilme1"> </li>
-                    <li> <img src="" alt="imgFilme2"> </li>
-                    <li> <img src="" alt="imgFilme3"> </li>
-                    <li> <img src="" alt="imgFilme4"> </li>
-                    <li> <img src="" alt="imgFilme5"> </li>
-                    <li> <img src="" alt="imgFilme6"> </li>
-                    <li> <img src="" alt="imgFilme7"> </li>
-                    <li> <img src="" alt="imgFilme8"> </li>
+                    <li> <img src="./src/filmes/Filme1.png" alt="imgFilme1"> </li>
+                    <!-- 
+                    <li> <img src="./src/filmes/filme2.png" alt="imgFilme2"> </li>
+                    <li> <img src="./src/filmes/filme3.png" alt="imgFilme3"> </li>
+                    <li> <img src="./src/filmes/filme4.png" alt="imgFilme4"> </li>
+                    <li> <img src="./src/filmes/filme5.png" alt="imgFilme5"> </li>
+                    <li> <img src="./src/filmes/filme6.png" alt="imgFilme6"> </li>
+                    <li> <img src="./src/filmes/filme7.png" alt="imgFilme7"> </li>
+                    <li> <img src="./src/filmes/filme8.png" alt="imgFilme8"> </li>
+                    -->
 
                 </ul>
 
             </div>
 
+            <article class="cardSinopse" >
+                <h2>Resumo </h2>
+
+
+            </article>
+
 
         </section>
 
         <section class="setPagPersonagens" id="paginaPersonagens">
-
+            
             <div class="cardPersonagens">
                 <h2>Personagens</h2>
-                <ul>
-                    <li> <img src="" alt="imgPersonagem1"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem2"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem3"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem4"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem5"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem6"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem7"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem8"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem9"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
-                    <li> <img src="" alt="imgPersonagem10"> </li>
-                    <h3>Nome Personagem </h3>
-                    <p>informações</p>
+                <h1>Harry potter </h1>
+                <p> No mundo de magia de Harry Potter os<br>
+                    personagens ganham vida e ao longo de 8 filmes <br>
+                    alguns desses personagens foram responsáveis por deixar<br>
+                    a saga ainda mais especial.
+                </p>
+                <ul class="cardPersonagens__nomePersoagens" >
+                    <li> <img src="./src/harry potter.png" alt="imgPersonagem1">
+                        <h3 >Harry Potter </h3>
+                         <p >Nascimento: 31 de julho de 1980 <br>
+                            (Godric's Hollow, Sudoeste da <br>
+                            Inglaterra, Grã-Bretanha)<br>
+                            Casa de Hogwarts: Grifinória <br>
+                            Patrono: Cervo
+                        
+                        </p>
+                    </li>
+                       
+                    <li> <img src="./src/voldemort.png" alt="imgPersonagem2">
+                        <h3> Lord Voldemort</h3>
+                        <p>informações</p>
+                     </li>
+                    
+                    <li> <img src="./src/abus.png" alt="imgPersonagem3">
+                        <h3>Albus Dumbledore </h3>
+                        <p>informações</p> </li>
+                    
+                    <li> <img src="./src/Ginny Weasley.png" alt="imgPersonagem4">
+                        <h3>Ginevra Weasley  </h3>
+                        <p>informações</p>
+                    
+                    </li>
+                    
+                    <li> <img src="./src/Granger.png" alt="imgPersonagem5"> 
+                        <h3>Hermione Granger </h3>
+                        <p>informações</p>
+                    
+                    </li>
+                   
+                    <li> <img src="./src/Minerva.png" alt="imgPersonagem6">
+                        <h3>Minerva McGonagall</h3>
+                        <p>informações</p>
+                    
+                    </li>
+                  
+                    <li> <img src="./src/Rubeus.png" alt="imgPersonagem7">
+                        <h3>Rubeus Hagrid </h3>
+                        <p>informações</p>
+                    </li>
+                    
+                    <li> <img src="./src/Ronald.png" alt="imgPersonagem8">
+                        <h3>Ronald  Weasley</h3>
+                        <p>informações</p>
+                    
+                    </li>
+                    
+                    <li> <img src="./src/Severo.png" alt="imgPersonagem9"> 
+                        <h3>Severo Snape </h3>
+                        <p>informações</p>
+                    
+                    </li>
+                    
+                    <li> <img src="./src/Dobby.png" alt="imgPersonagem10"> 
+                        <h3>Dobby </h3>
+                        <p>informações</p>
+                    
+                    </li>
+                    
                 
                 </ul>
 
@@ -89,10 +144,40 @@
 
         </section>
         <section class="setPagSobre" id="paginaSobre">
-            <div class="Dsobre">
-                <h2>Sobre </h2>
-                <p>Texto</p>
+           
+            <div class="dSobre">
+                <h4>Filmes | Personagens | HP FourLink </h4>
+                <h1>Sobre a HP FourLink </h1>
+                <p>No nosso site temático de Harry Potter, buscamos oferecer aos<br>
+                usuários a oportunidade de imergir no universo mágico criado <br>
+                por J.K Rowling. Oferecendo informações<br> sobre filmes e personagens.
+                </p>
+
+                <form class="form__contato">
+                    <fieldset>
+                       <legend>
+                           <h2>Entre em Contato</h2>
+                       </legend>
+                       <label>E-mail</label><br>
+                       <label>
+                        <input type="email" id="email" name="email" required>
+                       </label> <br>
+                       <label>Mensagem</label><br>
+                       <textarea id="mensagem" name="mensagem" required></textarea>
+                       <input type="submit" value="Enviar">
+                      
+                   </fieldset>
+               </form>
+                   
             </div>
+
+
+
+           
+                    
+                    
+               
+            
 
         </section>
 
