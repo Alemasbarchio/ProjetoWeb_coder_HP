@@ -10,3 +10,11 @@ ENVIAR LINKS NA ENTREGA DA ATIVIDADE
 1 CONSTRUIR A ESTRUTURA COMPLETA HTML DO PROTÓTIPO
 2 USAR TAGS CONTAINERS, TAGS MULTIMÍDIA, TAGS DE TEXTO + TAGS SEMÂNTICAS 
 3 CONSTRUIR PÁGINA PRINCIPAL  
+--------------------------------------------------------------------------------------------------------------
+[SEGUNDA ENTREGA PROJETO FINAL ]
+1 Criar arquivo .css para o proheto FINAL
+2 Utilizar 
+a) cores e tipografia
+b) box modeling 
+c) Pseudo-classes-elementos
+D) Animações
