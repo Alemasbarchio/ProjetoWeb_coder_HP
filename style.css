@@ -69,17 +69,11 @@ li {
     align-items: center;
 
 }
-.cardFilmes{
-    width: 450px;
-    height: 500px;
-    background-color: rgb(255, 255, 255);
-
-}
 
 .cardSinopse {
 
     width: 450px;
-    height: 600px;
+    height: 800px;
     background-color: rgb(255, 255, 0);
 
 }
@@ -106,10 +100,6 @@ li {
     padding: 10px;
 
     margin: 0 auto;
- 
-    width: 250px;
-    height: 350px;
-    background-color: brown;
 
 }
 
