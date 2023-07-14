@@ -18,3 +18,7 @@ a) cores e tipografia
 b) box modeling 
 c) Pseudo-classes-elementos
 D) Animações
+
+
+
+

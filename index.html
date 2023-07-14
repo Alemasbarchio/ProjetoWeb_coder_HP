@@ -5,43 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
+    
     <title>Projeto HP</title>
+    
 
 </head>
 
 <body>
     <div id="idPagInicial">
         <header class="header">
-            <img class="imgLogo" src="./src/hpLogo.png" alt="imgLogo">
+            <img class="img-logo" src="./src/hpLogo.png" alt="imgLogo">
             <nav>
-               
-                <ul class="navMenu">
+
+                <ul class="nav-menu">
                     <li><a href="#idPagInicial"> Página inicial</a></li>
                     <li> <a href="#paginaFilmes"> Filmes </a></li>
                     <li> <a href="#paginaPersonagens"> Personagens</a></li>
                     <li> <a href="#paginaSobre"> Sobre</a> </li>
-                    <li> <a href="#"> Contato</a> </li>
+                    <li> <a href="#paginaSobre"> Contato</a> </li>
                 </ul>
             </nav>
         </header>
     </div>
     <main>
-        <section class="setPaginaInicial">
-            <img class="imgFundo" src="./src/fundoPagInicial.png" alt="imgPaginaInicial">
-            
-            <div class="cardInicial">
-                               
-           </div>
+        <section class="set-pagina-inicial">
+            <img class="img-fundo" src="./src/fundoPagInicial2.jpg" alt="imgPaginaInicial">
+
+            <div class="card-inicial">
+                <h2></h2>
+            </div>
 
         </section>
-        <section class="setPagFilmes" id="paginaFilmes">
 
-            <div class="cardFilmes">
+        <section class="set-pag-filmes" id="paginaFilmes">
+            <div class="set-pag-filmes__titulo">
                 <h2>Filmes | Notas </h2>
-                <ul>
-                    <li> <img src="./src/filmes/Filme1.png" alt="imgFilme1"> </li>
-                    <!-- 
+                <p>A saga de filmes de Harry Potter transporta os espectadores para um mundo mágico de aventuras épicas,
+                     batalhas entre o bem e o mal.<br> Com atuações brilhantes, efeitos visuais deslumbrantes 
+                     e uma narrativa envolvente, os filmes de Harry Potter são uma jornada cinematográfica <br> imperdível para fãs de 
+                     todas as idades.</p>
+            </div>
+
+            <div class="card-filmes">
+                <ul class="card-filmes__slider">
+           
+                <li> <img src="./src/filmes/Filme1.png" alt="imgFilme1"> </li>
+                <!-- 
                     <li> <img src="./src/filmes/filme2.png" alt="imgFilme2"> </li>
                     <li> <img src="./src/filmes/filme3.png" alt="imgFilme3"> </li>
                     <li> <img src="./src/filmes/filme4.png" alt="imgFilme4"> </li>
@@ -50,23 +60,27 @@
                     <li> <img src="./src/filmes/filme7.png" alt="imgFilme7"> </li>
                     <li> <img src="./src/filmes/filme8.png" alt="imgFilme8"> </li>
                     -->
-
+                   
+                   <button id="botaoSinopse" type="button" onclick="">Ver Sinopse</button>
+                    
                 </ul>
+                <button id="botaoAvancar" type="button" onclick="">Avançar</button> 
+           
+            
 
-            </div>
-
-            <article class="cardSinopse" >
-                <h2>Resumo </h2>
+            <article class="card-sinopse">
+               
+                <h2>Sinopse / notas</h2>
 
 
             </article>
-
+        </div>
 
         </section>
 
-        <section class="setPagPersonagens" id="paginaPersonagens">
-            
-            <div class="cardPersonagens">
+        <section class="set-pag-personagens" id="paginaPersonagens">
+
+            <div class="card-personagens">
                 <h2>Personagens</h2>
                 <h1>Harry potter </h1>
                 <p> No mundo de magia de Harry Potter os<br>
@@ -74,100 +88,101 @@
                     alguns desses personagens foram responsáveis por deixar<br>
                     a saga ainda mais especial.
                 </p>
-                <ul class="cardPersonagens__nomePersoagens" >
-                    <li> <img src="./src/harry potter.png" alt="imgPersonagem1">
-                        <h3 >Harry Potter </h3>
-                         <p >Nascimento: 31 de julho de 1980 <br>
+                <ul class="card-personagens__nome-persoagens">
+                    <li> <img class="img" src="./src/harry potter.png" alt="imgPersonagem1">
+                        <h3>Harry Potter </h3>
+                        <p>Nascimento: 31 de julho de 1980 <br>
                             (Godric's Hollow, Sudoeste da <br>
                             Inglaterra, Grã-Bretanha)<br>
                             Casa de Hogwarts: Grifinória <br>
                             Patrono: Cervo
-                        
+
                         </p>
                     </li>
-                       
+
                     <li> <img src="./src/voldemort.png" alt="imgPersonagem2">
                         <h3> Lord Voldemort</h3>
                         <p>informações</p>
-                     </li>
-                    
+                    </li>
+
                     <li> <img src="./src/abus.png" alt="imgPersonagem3">
                         <h3>Albus Dumbledore </h3>
-                        <p>informações</p> </li>
-                    
-                    <li> <img src="./src/Ginny Weasley.png" alt="imgPersonagem4">
-                        <h3>Ginevra Weasley  </h3>
                         <p>informações</p>
-                    
                     </li>
-                    
-                    <li> <img src="./src/Granger.png" alt="imgPersonagem5"> 
+
+                    <li> <img src="./src/Ginny Weasley.png" alt="imgPersonagem4">
+                        <h3>Ginevra Weasley </h3>
+                        <p>informações</p>
+
+                    </li>
+
+                    <li> <img src="./src/Granger.png" alt="imgPersonagem5">
                         <h3>Hermione Granger </h3>
                         <p>informações</p>
-                    
+
                     </li>
-                   
+
                     <li> <img src="./src/Minerva.png" alt="imgPersonagem6">
                         <h3>Minerva McGonagall</h3>
                         <p>informações</p>
-                    
+
                     </li>
-                  
+
                     <li> <img src="./src/Rubeus.png" alt="imgPersonagem7">
                         <h3>Rubeus Hagrid </h3>
                         <p>informações</p>
                     </li>
-                    
+
                     <li> <img src="./src/Ronald.png" alt="imgPersonagem8">
-                        <h3>Ronald  Weasley</h3>
+                        <h3>Ronald Weasley</h3>
                         <p>informações</p>
-                    
+
                     </li>
-                    
-                    <li> <img src="./src/Severo.png" alt="imgPersonagem9"> 
+
+                    <li> <img src="./src/Severo.png" alt="imgPersonagem9">
                         <h3>Severo Snape </h3>
                         <p>informações</p>
-                    
+
                     </li>
-                    
-                    <li> <img src="./src/Dobby.png" alt="imgPersonagem10"> 
+
+                    <li> <img src="./src/Dobby.png" alt="imgPersonagem10">
                         <h3>Dobby </h3>
                         <p>informações</p>
-                    
+
                     </li>
-                    
-                
+
+
                 </ul>
 
             </div>
 
         </section>
-        <section class="setPagSobre" id="paginaSobre">
-           
-            <div class="dSobre">
+        <section class="set-pag-sobre" id="paginaSobre">
+
+            <div class="d-sobre">
                 <h4>Filmes | Personagens | HP FourLink </h4>
                 <h1>Sobre a HP FourLink </h1>
                 <p>No nosso site temático de Harry Potter, buscamos oferecer aos<br>
-                usuários a oportunidade de imergir no universo mágico criado <br>
-                por J.K Rowling. Oferecendo informações<br> sobre filmes e personagens.
+                    usuários a oportunidade de imergir no universo mágico criado <br>
+                    por J.K Rowling. Oferecendo informações<br> sobre filmes e personagens.
                 </p>
 
                 <form class="form__contato">
                     <fieldset>
-                       <legend>
-                           <h2>Entre em Contato</h2>
-                       </legend>
-                       <label>E-mail</label><br>
-                       <label>
-                        <input type="email" id="email" name="email" required>
-                       </label> <br>
-                       <label>Mensagem</label><br>
-                       <textarea id="mensagem" name="mensagem" required></textarea>
-                       <input type="submit" value="Enviar">
-                      
-                   </fieldset>
-               </form>
-                   
+                        <legend>
+                            <h2>Entre em Contato</h2>
+                        </legend>
+                        <label>E-mail</label><br>
+                        <label>
+                            <input type="email" id="email" name="email" required>
+                        </label> <br>
+                        <label>Mensagem</label><br>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                        <input type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
+
             </div>
 
         </section>

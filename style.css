@@ -1,23 +1,25 @@
 * {
-
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
 a,
 li {
     text-decoration: none;
-
     list-style: none;
 }
 
-.imgLogo {
+.img-logo {
     width: 50px;
     height: 50px;
 }
 
-.imgFundo {
+.img-fundo {
     width: 100%;
 
 }
@@ -25,120 +27,229 @@ li {
 .header {
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.295);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     position: fixed;
+    z-index: 100;
 
 }
 
-.navMenu {
+.nav-menu {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
-.navMenu a {
+.nav-menu a {
     color: white;
+    font-size: 18px;
 
 }
 
-.navMenu li {
-    margin-left: 10px;
-    margin-right: 80px;
+.nav-menu li {
+    margin-left: 0 auto;
+    padding-right: 80px;
 
 }
 
-.navMenu li a {
+.nav-menu li :hover {
+
+    color: rgb(0, 191, 255);
+
+}
+
+
+.nav-menu li a {
     display: block;
     padding: 10px;
     color: white;
 }
 
-.setPaginaInicial {
+.set-pagina-inicial {
     display: flex;
-
-}
-
-.setPagFilmes {
-    background-color: rgba(1, 9, 11, 1);
-    display: flex;
-    justify-content: space-around;
     align-items: center;
 
 }
 
-.cardSinopse {
+.card-inicial {
+    display: flex;
+    align-items: start;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    padding-top: 230px;
 
-    width: 450px;
-    height: 800px;
+}
+
+.card-inicial h2 {
+    color: white;
+    font-size: 40px;
+
+}
+
+
+.set-pag-filmes {
+    padding: 50px;
+    background-color: rgba(1, 9, 11, 1);
+
+}
+
+
+.card-filmes {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   align-items: center;
+    padding-top: 50px;
+
+}
+
+
+.card-filmes__slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.card-filmes__slider img:not(:hover) {
+    opacity: 0.2;
+
+}
+.card-filmes__slider:hover #botaoSinopse{
+    display: none;
+    
+}
+
+
+
+#botaoAvancar {
+
+    width: 80px;
+    height: 40px;
+    background-color: green;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+    
+}
+
+
+#botaoAvancar:hover{
+    background-color: rgb(0, 117, 226);
+
+}
+
+#botaoSinopse{
+position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 50;
+    left: 40%;
+    color: rgb(255, 255, 255);
+    background-color: green;
+    
+}
+
+
+
+.card-sinopse {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 480px;
     background-color: rgb(255, 255, 0);
 
 }
 
-
-
-.cardPersonagens {
+.card-personagens {
     background-color: black;
     padding: 35px;
 
-
 }
 
-.cardPersonagens>ul {
+.card-personagens>ul {
     padding: 35px;
     display: flex;
     flex-wrap: wrap;
 
-
-
 }
 
-.cardPersonagens ul li {
-    padding: 10px;
+.card-personagens ul li {
 
     margin: 0 auto;
 
 }
 
-.cardPersonagens>ul>li img {
 
-    width: 240px;
+.card-personagens__nome-persoagens li:hover {
 
+    width: 260px;
+    border: solid rgb(255, 255, 255) 1px;
+
+}
+
+.card-personagens__nome-persoagens li {
+
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+
+.card-personagens__nome-persoagens li:not(:hover) {
+    opacity: 0.3;
+    border: double cadetblue;
 
 
 }
 
-.cardPersonagens h2 {
+.card-personagens li {
+    width: 250px;
+
+}
+
+.card-personagens>ul>li img {
+
+    width: 100%;
+
+}
+
+.card-personagens h2,
+.set-pag-filmes__titulo h2 {
     padding-top: 5px;
     padding-left: 30px;
     color: rgb(255, 255, 255);
 
 }
 
-.cardPersonagens p {
+.card-personagens p,
+.set-pag-filmes__titulo p {
     color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-left: 35px;
     font-size: 19px;
 
-
 }
 
 
-.cardPersonagens__nomePersoagens h3 {
+.card-personagens__nome-persoagens h3 {
 
     color: rgb(255, 255, 255);
     font-size: 25px;
-
     padding-top: 10px;
 
 }
 
-.cardPersonagens__nomePersoagens li p {
-    color: rgb(255, 255, 255);
+.card-personagens__nome-persoagens li p {
+
     margin: 0;
     padding: 0;
     padding-top: 10px;
@@ -146,7 +257,7 @@ li {
 
 }
 
-.cardPersonagens h1 {
+.card-personagens h1 {
     color: rgb(255, 255, 255);
     padding-top: 5px;
     padding-left: 30px;
@@ -154,17 +265,15 @@ li {
 
 }
 
-.setPagSobre {
+.set-pag-sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: cadetblue;
 
-
-
 }
 
-.dSobre,
+.d-sobre,
 h1,
 h4,
 p {
