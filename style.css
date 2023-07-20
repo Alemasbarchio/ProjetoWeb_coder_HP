@@ -21,7 +21,7 @@ li {
 
 .img-fundo {
     width: 100%;
-
+    filter: brightness(50%);
 }
 
 .header {
@@ -29,8 +29,7 @@ li {
     height: 50px;
     background-color: rgba(0, 0, 0, 0.295);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  justify-content: space-between;
     align-items: center;
     padding: 10px;
     position: fixed;
@@ -40,7 +39,36 @@ li {
 
 .nav-menu {
     display: flex;
-    flex-wrap: wrap;
+  
+
+}
+
+@media (max-width:600px){
+    
+    
+.header{
+    background-color: rgba(0, 0, 0, 0.295);
+    flex-direction: column;
+    align-items: start;
+    width: 63px;
+    height: 250px;
+      
+}
+.nav-menu {
+    
+  flex-direction: column;
+   
+}
+.header .nav-menu li a{
+   
+font-size: 12px;}
+ .card-inicial .card-inicial__titulo-informacao{
+  
+  padding-top: 0;
+  width: 80%;
+            
+}
+
 
 }
 
@@ -71,17 +99,35 @@ li {
 
 .set-pagina-inicial {
     display: flex;
-    align-items: center;
+    
+    justify-content:center;
 
 }
 
 .card-inicial {
-    display: flex;
-    align-items: start;
-    width: 50%;
-    height: 80%;
+   
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-items: end;
+
+    align-items:start;
+    width: 80%;
+    height: 50%;
     position: absolute;
-    padding-top: 230px;
+   
+    
+
+}
+.card-inicial__titulo-informacao{
+
+    padding-top: 60px;
+
+}
+.card-inicial__titulo-informacao p{
+    color: white;
+    font-size: 16px;
+    
+
 
 }
 
@@ -93,19 +139,21 @@ li {
 
 
 .set-pag-filmes {
-    padding: 50px;
+    padding: 52px;
     background-color: rgba(1, 9, 11, 1);
 
 }
 
 
 .card-filmes {
+   
 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
    align-items: center;
     padding-top: 50px;
+    padding-left: 50px;
 
 }
 
@@ -170,7 +218,7 @@ position: absolute;
 
 .card-personagens {
     background-color: black;
-    padding: 35px;
+    padding: 50px;
 
 }
 
