@@ -21,7 +21,7 @@ li {
 
 .img-fundo {
     width: 100%;
-    filter: brightness(50%);
+    filter: brightness(55%);
 }
 
 .header {
@@ -34,11 +34,13 @@ li {
     padding: 10px;
     position: fixed;
     z-index: 100;
+ 
 
 }
 
 .nav-menu {
     display: flex;
+   
   
 
 }
@@ -87,6 +89,7 @@ font-size: 12px;}
 .nav-menu li :hover {
 
     color: rgb(0, 191, 255);
+  
 
 }
 
@@ -95,47 +98,90 @@ font-size: 12px;}
     display: block;
     padding: 10px;
     color: white;
+ 
 }
 
 .set-pagina-inicial {
     display: flex;
-    
-    justify-content:center;
+    position: relative;
+  
+
+}
+#btnMessageVoltar{
+background-color: rgba(0, 255, 255, 0);
+width: 80px;
+height: 80px;
+border:none;
+
+}
+#btnMessageVoltar>img, #btnMessageAvancar>img{
+border: none;
+width: 80px;
+height: 80px;
 
 }
 
 .card-inicial {
-   
+   background-color: rgba(0, 0, 0, 0.395);
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    justify-items: end;
+    grid-template-columns: 10% 80% 10%;
+    grid-gap: 35px;
+   position: absolute;
+  top:30%;
+  align-items: center;
+  border-bottom:double rgba(0, 170, 255, 0.323)2px;
+ 
+}
+.card-inicial__titulo-mensagens__message-list{
 
-    align-items:start;
-    width: 80%;
-    height: 50%;
-    position: absolute;
+    padding-left: 100px;
+   width: 80%;
+   height: 300px;
+}
+
+.card-inicial__titulo-mensagens__message-list li {
+
+    display: none;
+    
+}
+
+.card-inicial__titulo-mensagens__message-list li.active {
+    display: block;
    
-    
+  }
 
-}
-.card-inicial__titulo-informacao{
-
-    padding-top: 60px;
-
-}
-.card-inicial__titulo-informacao p{
+.card-inicial__titulo-mensagens p{
     color: white;
-    font-size: 16px;
-    
-
+    font-size: 24px;
+    padding-top: 25px;
+  
 
 }
 
 .card-inicial h2 {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
 
 }
+
+.card-inicial_cto-123{
+
+display: grid;
+grid-column: 2;justify-content: center;
+
+}
+.card-inicial_cto-imglist{
+display: flex;
+padding-top:125px ;
+gap: 20px;
+
+}
+.card-inicial_cto-imglist>li{
+
+    opacity: 0.3;
+    
+      }
+
 
 
 .set-pag-filmes {
@@ -330,3 +376,13 @@ p {
     padding-bottom: 10px;
 
 }
+
+
+
+
+
+    
+  
+  
+
+
