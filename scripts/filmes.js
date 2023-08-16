@@ -10,10 +10,10 @@ const cardSinopse_Textos = document.getElementById("card-sinopse_Textos");
 
 
 const imageGroup = [
-  ["./src/filmes/Filme1.jpg", "./src/filmes/Filme3.jpg"],
-  ["./src/filmes/Filme4.jpg", "./src/filmes/Filme2.jpg"],
-  ["./src/filmes/Filme5.jpg", "./src/filmes/Filme8.jpg"],
-  ["./src/filmes/Filme6.jpg", "./src/filmes/Filme7.jpg"],
+  ["./src/filmes/Filme1.jpg", "./src/filmes/filme3.jpg"],
+  ["./src/filmes/filme4.jpg", "./src/filmes/filme2.jpg"],
+  ["./src/filmes/filme5.jpg", "./src/filmes/filme8.jpg"],
+  ["./src/filmes/filme6.jpg", "./src/filmes/filme7.jpg"],
 
 ];
 
