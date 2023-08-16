@@ -20,7 +20,14 @@ c) Pseudo-classes-elementos
 D) Animações
 E)Uso das propriedades e valores corretamente[modificadores de texto,cores,box modeling,classes]
 F) 1-Atualização página Inicial 2-página filmes [alterado layout adicionado botão] 3-página personagens [adiconado animações] 4- responsividade
-
-
+----------------------------------------------------------------------------------------------------------------
+[ENTREGA FINAL]
+1 Estrutura Final  
+2 Estilo visual final
+3 Arquivos js   
+a) Animações Atualizadas
+b) cores e tipografia 
+c)  Atualização página Inicial(Inserido transição de textos automáticos e botões)
+d)  Página filmes alteração no layout(Mostrar sinopse dos filmes referente a imagem)
 
 
