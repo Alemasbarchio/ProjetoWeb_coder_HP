@@ -19,58 +19,68 @@ li {
     height: 50px;
 }
 
-.img-fundo {
-    width: 100%;
-    filter: brightness(55%);
-}
 
 .header {
     width: 100%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.295);
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     position: fixed;
     z-index: 100;
- 
 
 }
 
 .nav-menu {
     display: flex;
-   
-  
 
 }
 
-@media (max-width:600px){
-    
-    
-.header{
-    background-color: rgba(0, 0, 0, 0.295);
-    flex-direction: column;
-    align-items: start;
-    width: 63px;
-    height: 250px;
-      
-}
-.nav-menu {
-    
-  flex-direction: column;
-   
-}
-.header .nav-menu li a{
-   
-font-size: 12px;}
- .card-inicial .card-inicial__titulo-informacao{
-  
-  padding-top: 0;
-  width: 80%;
-            
-}
+@media (max-width:600px) {
 
+    .header {
+        background-color: rgba(0, 0, 0, 0.295);
+        flex-direction: column;
+        align-items: center;
+        width: 70px;
+        height: 250px;
+
+    }
+
+    .img-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 70px;
+
+    }
+
+    .header .nav-menu li a {
+        font-size: 14px;
+    }
+
+    main .set-pagina-inicial {
+        justify-content: center;
+        .card-inicial__titulo-mensagens__message-list>li>h2 {
+            font-size: 35px;
+
+        }
+
+        .card-inicial__titulo-mensagens__message-list>li>p {
+            font-size: 15px;
+
+        }
+
+    }
+
+    .set-pag-filmes .card-filmes__card-sinopse {
+        height: 250px;
+    }
 
 }
 
@@ -82,15 +92,12 @@ font-size: 12px;}
 
 .nav-menu li {
     margin-left: 0 auto;
-    padding-right: 80px;
+    padding-right: 40px;
 
 }
 
 .nav-menu li :hover {
-
     color: rgb(0, 191, 255);
-  
-
 }
 
 
@@ -98,188 +105,201 @@ font-size: 12px;}
     display: block;
     padding: 10px;
     color: white;
- 
 }
 
 .set-pagina-inicial {
+
+    background-image: url("./src/fundoPagInicial2.jpg");
+    background-size: cover;
+    border-bottom: double rgba(0, 170, 255, 0.323)2px;
     display: flex;
-    position: relative;
-  
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
 
 }
-#btnMessageVoltar{
-background-color: rgba(0, 255, 255, 0);
-width: 80px;
-height: 80px;
-border:none;
+
+#btnMessageVoltar,
+#btnMessageAvancar {
+    background-color: rgba(0, 255, 255, 0);
+    width: 80px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
 
 }
-#btnMessageVoltar>img, #btnMessageAvancar>img{
-border: none;
-width: 80px;
-height: 80px;
-padding-left: 30px;
+
+#btnMessageVoltar>img,
+#btnMessageAvancar>img {
+    border: none;
+    width: 100%;
 
 }
 
 .card-inicial {
-   background-color: rgba(0, 0, 0, 0.395);
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    
-   position: absolute;
-  top:30%;
-  align-items: center;
-  border-bottom:double rgba(0, 170, 255, 0.323)2px;
- 
-}
-.card-inicial__titulo-mensagens__message-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+    border-bottom: double rgba(0, 170, 255, 0.323)2px;
 
+}
+
+.card-inicial__titulo-mensagens {
+    height: 350px;
+}
+
+.card-inicial__titulo-mensagens__message-list {
     padding-left: 100px;
-   width: 80%;
-   height: 300px;
+
 }
 
 .card-inicial__titulo-mensagens__message-list li {
 
     display: none;
-    
+
 }
 
 .card-inicial__titulo-mensagens__message-list li.active {
     display: block;
-   
-  }
 
-.card-inicial__titulo-mensagens p{
+}
+
+.card-inicial__titulo-mensagens p {
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     padding-top: 25px;
-  
+
 
 }
 
 .card-inicial h2 {
     color: white;
-    font-size: 50px;
+    font-size: 55px;
 
 }
 
-.card-inicial_cto-123{
 
-display: grid;
-grid-column: 2;justify-content: center;
+.card-inicial_cto-123 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
-}
-.card-inicial_cto-imglist{
-display: flex;
-padding-top:125px ;
-gap: 20px;
 
 }
-.card-inicial_cto-imglist>li{
+
+.card-inicial_cto-imglist {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.card-inicial_cto-imglist>li {
 
     opacity: 0.3;
-    
-      }
 
+}
+
+.card-inicial_cto-imglist>li>img {
+
+    width: 100%;
+
+}
 
 
 .set-pag-filmes {
-    padding: 52px;
-    background-color: rgba(1, 9, 11, 1);
-
-}
-
-
-.card-filmes {
-   
-
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   align-items: center;
-    padding-top: 50px;
-    padding-left: 50px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 100px;
+    background-color: rgb(0, 0, 0);
 
 }
-
 
 .card-filmes__slider {
-    position: relative;
+
+    padding-top: 15px;
+    width: 100%;
     display: flex;
+    gap: 5px;
     align-items: center;
-    gap: 20px;
-    
+    justify-content: space-evenly;
+
+
 }
+
+.card-filmes__slider li {
+    width: 300px;
+}
+
+.card-filmes__slider li>img {
+    width: 100%;
+}
+
 
 .card-filmes__slider img:not(:hover) {
     opacity: 0.2;
 
 }
-.card-filmes__slider:hover #botaoSinopse{
+
+#btnAvancar {
+    background-color: rgba(0, 170, 255, 0.089);
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+#btnAvancar:hover {
+    background-color: rgba(0, 170, 255, 0.559);
+}
+
+#ListSinopseFilmeCard1,
+#ListSinopseFilmeCard2 {
     display: none;
-    
 }
 
+.card-filmes__card-sinopse {
 
-
-#botaoAvancar {
-
-    width: 80px;
-    height: 40px;
-    background-color: green;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    border-radius: 10%;
-    
-}
-
-
-#botaoAvancar:hover{
-    background-color: rgb(0, 117, 226);
+    border-bottom: double rgba(0, 170, 255, 0.323)2px;
+    border-top: double rgba(0, 170, 255, 0.323)5px;
+    border-right: double rgba(0, 170, 255, 0.323)2px;
+    width: 96%;
+    height: 140px;
+    margin: 0 auto;
 
 }
 
-#botaoSinopse{
-position: absolute;
-    width: 80px;
-    height: 40px;
-    top: 50;
-    left: 40%;
-    color: rgb(255, 255, 255);
-    background-color: green;
-    
-}
-
-
-
-.card-sinopse {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 480px;
-    background-color: rgb(255, 255, 0);
-
+#card-sinopse_Textos {
+    padding-top: 10px;
+    color: white;
 }
 
 .card-personagens {
     background-color: black;
-    padding: 50px;
+    padding-left: 90px;
+    padding-top: 50px;
 
 }
 
-.card-personagens>ul {
-    padding: 35px;
+.card-personagens__nome-persoagens {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 
 }
 
-.card-personagens ul li {
-
+.card-personagens__nome-persoagens li {
+    width: 250px;
     margin: 0 auto;
-
 }
 
 
@@ -297,8 +317,6 @@ position: absolute;
 }
 
 
-
-
 .card-personagens__nome-persoagens li:not(:hover) {
     opacity: 0.3;
     border: double cadetblue;
@@ -306,12 +324,7 @@ position: absolute;
 
 }
 
-.card-personagens li {
-    width: 250px;
-
-}
-
-.card-personagens>ul>li img {
+.card-personagens__nome-persoagens li img {
 
     width: 100%;
 
@@ -320,7 +333,7 @@ position: absolute;
 .card-personagens h2,
 .set-pag-filmes__titulo h2 {
     padding-top: 5px;
-    padding-left: 30px;
+
     color: rgb(255, 255, 255);
 
 }
@@ -329,7 +342,7 @@ position: absolute;
 .set-pag-filmes__titulo p {
     color: rgb(255, 255, 255);
     padding-top: 10px;
-    padding-left: 35px;
+
     font-size: 19px;
 
 }
@@ -355,7 +368,6 @@ position: absolute;
 .card-personagens h1 {
     color: rgb(255, 255, 255);
     padding-top: 5px;
-    padding-left: 30px;
     font-size: 45px;
 
 }
@@ -378,12 +390,34 @@ p {
 
 }
 
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90x;
+    justify-content: space-around;
+}
+
+.footer-itens>img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-itens {
+
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid white 5px;
 
 
+}
 
+.footer-itens_textos-sobre,
+.footer-itens_textos-informacao {
+    color: white;
+    text-align: center;
 
-    
-  
-  
-
-
+}
