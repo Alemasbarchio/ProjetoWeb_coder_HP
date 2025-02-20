@@ -13,7 +13,7 @@ Projeto desenvolvido para o curso desenvolvimento web  da Coderhouse.
 
 
 # Visão do Projeto
-![Image Alt](https://github.com/Alemasbarchio/ProjetoWeb_coder_HP/blob/90480bf10615ef9abb9580b08bf772d5ef523a51/teste.jpg"This is a sample image.")
+![Image Alt](https://github.com/Alemasbarchio/ProjetoWeb_coder_HP/blob/90480bf10615ef9abb9580b08bf772d5ef523a51/teste.jpg)
 
 ## Links
 https://alemasbarchio.github.io/ProjetoWeb_coder_HP/
